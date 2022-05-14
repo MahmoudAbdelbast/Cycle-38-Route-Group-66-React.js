@@ -1,57 +1,73 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 
 <body>
-    <h2>Mahmoud Tolba Section</h2>
-    <div id="inputForm" class="w-75 mx-auto py-3">
-        <h2 class="fw-bolder my-2">Product Managment System</h2>
 
-        <label for="productNameInput">ProductName :</label>
-        <input type="text" class="form-control mb-3" id="productNameInput" value="" autofocus />
+    <div class="w-75 m-auto py-5">
 
-        <label for="productPriceInput">ProductPrice :</label>
-        <input type="number" class="form-control mb-3" id="productPriceInput" value="" />
+            <div class="form-group">
+                <label for="productName">productName</label>
+                <input class="form-control" type="text"  id="productName">    
+            </div>
 
-        <label for="productCategoryInput">ProductCategory :</label>
-        <input type="text" class="form-control mb-3" id="productCategoryInput" value="" />
+            <div class="form-group">
+                <label for="productPrice">productPrice</label>
+                <input class="form-control" type="number" id="productPrice">    
+            </div>
 
-        <label for="productDescInput">ProductDesc :</label>
-        <textarea type="text" class="form-control mb-3" id="productDescInput" placeholder="Enter here your feedback"></textarea>
-        <button onclick="   addProduct(); " class="btn btn-info">
-            add Product
-        </button>
+            <div class="form-group">
+                <label for="productCategory">productCategory</label>
+                <input class="form-control" type="text"  id="productCategory">    
+            </div>
+
+            <div class="form-group">
+                <label for="productDesc">productDesc</label>
+                <textarea class="form-control" type="text"  id="productDesc"></textarea>
+
+            </div>
+            <button onclick="addProduct();" class="btn btn-outline-info">add Product</button>
+
     </div>
-    <div id="btns" class="w-75 mx-auto py-3 tolba">
+ 
 
-        <!-- <div class="test col-8">
-            <p id="productNameOutput" class="col-3"></p>
-            <p id="productPriceOutput" class="col-3"></p>
-            <p id="productCategoryOutput" class="col-3"></p>
-            <p id="productDescOutput" class="col-3"></p>
-        </div>
-        <div class="buttons col-4">
-            <button onclick="editProduct();" class="btn btn-info col-5">Edit Product</button>
-            <button onclick="delProduct();" class="btn btn-info col-5">Delete Product</button>
-        </div> -->
+    <div class="w-75 m-auto py-3">
 
-        <!-- <div class="test col-8">
-            <input type="text" class="form-control my-3 " id="product1NameInput" value="${product.name}" />
-            <input type="number" class="form-control my-3 " id="product1PriceInput" value="${product.price}" />
-            <input type="text" class="form-control my-3 " id="product1CategoryInput" value="${product.category}" />
-            <input type="text" class="form-control my-3 " id="product1DescInput" value="${product.desc}" />
-        </div>
-        <div class="buttons col-4">
-            <button onclick="addProduct();" class="btn btn-info col-5">Save Product</button>
-            <button onclick="delProduct();" class="btn btn-info col-5">Delete Product</button>
-        </div> -->
+        <input placeholder="search ..." type="text" class="form-control w-75 m-auto"  id="searchInput">
+  
+        
+        <table class="table my-5">
+            <thead>
+                <th>Index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>productCategory</th>
+                <th>productDesc</th>
+                <th>update</th>
+                <th>delete</th>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>Toshiba</td>
+                    <td>8000</td>
+                    <td>mobile</td>
+                    <td>good</td>
+                    <td><button class="btn btn-outline-warning">update</button></td>
+                    <td><button class="btn btn-outline-danger">delete</button></td>
+
+                </tr>
+            </tbody>
+        </table>
+  
     </div>
 
-    <script src="js/main.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
