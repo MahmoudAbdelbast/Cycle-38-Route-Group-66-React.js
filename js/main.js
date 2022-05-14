@@ -35,12 +35,15 @@ function editProduct() {
     var element = document.getElementById('btns');
     element.classList.add('edited');
     document.getElementById('btns').innerHTML = `
-    <input type="text" class="form-control my-3" id="product1NameInput" value="${addedProduct.name}" />
-    <input type="number" class="form-control my-3" id="product1PriceInput" value="${addedProduct.price}" />
-    <input type="text" class="form-control my-3" id="product1CategoryInput" value="${addedProduct.category}" />
-    <input type="text" class="form-control my-3" id="product1DescInput" value="${addedProduct.desc}" />
-    <button onclick="editProduct();" class="btn btn-info col-2">Edit Product</button>
-    <button onclick="delProduct();" class="btn btn-info col-2">Delete Product</button>`;
+    <div class="test col-8">
+            <input type="text" class="form-control my-3" id="product1NameInput" value="${addedProduct.name}" />
+            <input type="number" class="form-control my-3" id="product1PriceInput" value="${addedProduct.price}" />
+            <input type="text" class="form-control my-3" id="product1CategoryInput" value="${addedProduct.category}" />
+            <input type="text" class="form-control my-3" id="product1DescInput" value="${addedProduct.desc}" />
+        </div>
+
+        <button onclick="addProduct();" class="btn btn-info col-2">Save Product</button>
+        <button onclick="delProduct();" class="btn btn-info col-2">Delete Product</button>`;
 }
 
 function delProduct() {

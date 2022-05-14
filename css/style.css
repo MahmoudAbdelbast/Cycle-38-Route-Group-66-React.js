@@ -101,7 +101,6 @@ header h1 {
     top: 0;
     height: 0%;
     transition: opacity 0.7s, height 0.7s;
-
 }
 
 .layer-content {
@@ -122,20 +121,14 @@ h3 {
     background-color: #ff206e;
 }
 
-
 .tolba {
     display: flex;
     border-radius: 5px;
-}
-.edited {
     background-color: #09c;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
+
 .tolba button {
-    margin: 5px auto;
+    margin: auto;
 }
 
 .tolba p {
@@ -143,13 +136,12 @@ h3 {
     font-weight: 600;
     margin: auto;
     padding: 5px 12px;
-    color: white;
-    background-color: #ff206e;
+    color: #fff;
+    background-color: #FF4949;
 }
 
 .tolba input {
     font-size: large;
     font-weight: 600;
     margin: auto;
-    color: white;
 }
