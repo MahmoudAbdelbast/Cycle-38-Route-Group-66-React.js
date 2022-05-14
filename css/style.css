@@ -124,7 +124,7 @@ h3 {
 .tolba {
     display: flex;
     border-radius: 5px;
-    background-color: #09c;
+    background-color: #541690;
 }
 
 .tolba button {
@@ -136,8 +136,7 @@ h3 {
     font-weight: 600;
     margin: auto;
     padding: 5px 12px;
-    color: #fff;
-    background-color: #FF4949;
+    color: #FFCD38;
 }
 
 .tolba input {

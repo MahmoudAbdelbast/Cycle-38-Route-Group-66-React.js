@@ -5,6 +5,7 @@ var productDescInput = document.getElementById('productDescInput');
 
 
 
+
 function addProduct() {
     var product = {
         name: productNameInput.value,
@@ -13,10 +14,12 @@ function addProduct() {
         desc: productDescInput.value
     }
     document.getElementById('btns').innerHTML = `
+    <div class="test col-8">
     <p id="productNameOutput" class="col-2"></p>
     <p id="productPriceOutput" class="col-2"></p>
     <p id="productCategoryOutput" class="col-2"></p>
     <p id="productDescOutput" class="col-2"></p>
+    </div>
     <button onclick="editProduct();" class="btn btn-info col-2">Edit Product</button>
     <button onclick="delProduct();" class="btn btn-info col-2">Delete Product</button>`;
     document.getElementById('productNameOutput').innerHTML = product.name;
@@ -26,22 +29,14 @@ function addProduct() {
 }
 
 function editProduct() {
-    var addedProduct = {
-        name: productNameInput.value,
-        price: productPriceInput.value,
-        category: productCategoryInput.value,
-        desc: productDescInput.value
-    }
     var element = document.getElementById('btns');
-    element.classList.add('edited');
     document.getElementById('btns').innerHTML = `
-    <div class="test col-8">
-            <input type="text" class="form-control my-3" id="product1NameInput" value="${addedProduct.name}" />
-            <input type="number" class="form-control my-3" id="product1PriceInput" value="${addedProduct.price}" />
-            <input type="text" class="form-control my-3" id="product1CategoryInput" value="${addedProduct.category}" />
-            <input type="text" class="form-control my-3" id="product1DescInput" value="${addedProduct.desc}" />
+        <div class="test col-8">
+            <input type="text" class="form-control my-3" id="product1NameInput" value="${product.name}" />
+            <input type="number" class="form-control my-3" id="product1PriceInput" value="${product.price}" />
+            <input type="text" class="form-control my-3" id="product1CategoryInput" value="${product.category}" />
+            <input type="text" class="form-control my-3" id="product1DescInput" value="${product.desc}" />
         </div>
-
         <button onclick="addProduct();" class="btn btn-info col-2">Save Product</button>
         <button onclick="delProduct();" class="btn btn-info col-2">Delete Product</button>`;
 }
