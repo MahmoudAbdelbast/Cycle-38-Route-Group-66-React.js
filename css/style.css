@@ -127,41 +127,35 @@ h3 {
     align-content: center;
 }
 
-.tolba p {
-    font-size: 1.25rem;
-    font-weight: 600;
-    padding: 10px;
-    color: #FFCD38;
-}
-
-.tolba input {
-    font-size: large;
-    font-weight: 600;
-}
-
 .test {
     display: flex;
+    justify-content: space-between;
     background-color: #541690;
     border-radius: 5px;
-    padding: 0;
-    margin: 0;
+    height: 76px;
+}
+
+.test p {
+    font-size: 1.25rem;
+    padding: 6px 12px;
+    margin: 16px 5px;
+    color: #FFCD38;
 }
 
 .test input {
     font-size: 1.25rem;
-    font-weight: 600;
+    padding: 6px 12px;
+    margin: 16px 5px;
 }
 
 .buttons {
     display: flex;
     background-color: #541690;
     border-radius: 5px;
-    padding: 0;
-    margin: 0;
 }
 
 .buttons button {
     font-size: 1.25rem;
-    margin: 10px auto;
-    padding: 10px;
+    padding: 6px 12px;
+    margin: 16px auto;
 }
