@@ -87,6 +87,6 @@ function editProduct() {
         </div>`;
 }
 
-var x = function delProduct() {
+function delProduct() {
     document.getElementById('btns').innerHTML = ``;
 }
