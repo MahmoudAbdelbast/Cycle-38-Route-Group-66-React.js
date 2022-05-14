@@ -22,10 +22,20 @@
         <label for="productDescInput">ProductDesc :</label>
         <textarea type="text" class="form-control mb-3" id="productDescInput" placeholder="enter her your feedback"></textarea>
         <button onclick="   addProduct(); " class="btn btn-info">
-      add Product
-    </button>
+            add Product
+        </button>
     </div>
     <div id="btns" class="w-75 mx-auto py-3 tolba">
+        <div class="test col-8">
+            <input type="text" class="form-control my-3" id="product1NameInput" value="${product.name}" />
+            <input type="number" class="form-control my-3" id="product1PriceInput" value="${product.price}" />
+            <input type="text" class="form-control my-3" id="product1CategoryInput" value="${product.category}" />
+            <input type="text" class="form-control my-3" id="product1DescInput" value="${product.desc}" />
+        </div>
+        <div class="buttons col-4">
+            <button onclick="addProduct();" class="btn btn-info col-5">Save Product</button>
+            <button onclick="delProduct();" class="btn btn-info col-5">Delete Product</button>
+        </div>
     </div>
 
     <script src="js/main.js"></script>
